@@ -1,8 +1,5 @@
-(function( root, $, undefined ) {
-	"use strict";
+'use-strict';
 
-	$(function () {
-		// DOM ready, take it away
-	});
+window.onload = function () {
 
-} ( this, jQuery ));
+};
