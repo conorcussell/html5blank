@@ -7,13 +7,6 @@ var gulp = require( "gulp" ),
 	$ = require( "gulp-load-plugins" )(),
 	/** @type {Array} JS source files to concatenate and uglify */
 	uglifySrc = [
-		/** Modernizr */
-		"src/bower_components/modernizr/modernizr.js",
-		/** Conditionizr */
-		"src/js/lib/conditionizr-4.3.0.min.js",
-		/** jQuery */
-		"src/bower_components/jquery/dist/jquery.js",
-		/** Page scripts */
 		"src/js/scripts.js"
 	],
 	/** @type {Object of Array} CSS source files to concatenate and minify */
@@ -73,7 +66,7 @@ gulp.task( "copy", function() {
 /** CSS Preprocessors */
 gulp.task( "sass", function () {
 	return gulp.src( "src/css/sass/style.scss" )
-		.pipe( $.rubySass({
+		.pipe( $.sass({
 			style: "expanded",
 			precision: 10
 		}))
