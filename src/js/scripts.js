@@ -1,5 +1,7 @@
 'use-strict';
 
-window.onload = function () {
+document.onreadystatechange = () => {
+  if (document.readyState === 'interactive') {
 
+  }
 };
